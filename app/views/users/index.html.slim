@@ -1,0 +1,43 @@
+.container.p-3
+  .row.mb-4
+    .col-12
+      .d-flex.align-items-center.justify-content-center
+        = render "search_form"
+
+  .row
+    .col-12
+      .mt-1.mb-2
+        = "#{@users.count} 件"
+      
+      .card.card-outline
+        .card-body
+          table.table
+            thead
+              tr
+                th scope="col"
+                  = t("activerecord.attributes.id")
+                th scope="col"
+                  = t("activerecord.attributes.user.full_name")
+                th scope="col"
+                  = t("activerecord.attributes.user.gender")
+                th scope="col"
+                  = t("activerecord.attributes.user.age")
+                th scope="col"
+                  = t("activerecord.attributes.user.prefecture_id")
+
+            - if @users.present?
+              - @users.each do |user|
+                tr
+                  td = user.id
+                  td = user.full_name
+                  td = user.gender_i18n
+                  td = user.age
+                  td = user.prefecture.name
+                  
+            - else
+              tr
+                td 該当するデータがありません
+                td
+                td
+                td
+                td
