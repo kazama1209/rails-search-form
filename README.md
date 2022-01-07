@@ -1,24 +1,7 @@
-# README
+# rails-search-form
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://user-images.githubusercontent.com/51913879/148598449-59ae6a8b-5509-43cd-baaf-366919ffe890.mov
 
-Things you may want to cover:
+Rails 6 × Formオブジェクトで作ったシンプルな検索機能。詳細は Qiita にて記載。
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://qiita.com/kazama1209/items/d1858a0a81f8fc9e73a1
